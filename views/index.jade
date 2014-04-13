@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	div(class="row")
+		div(class='col-md-6')
+			h1(id='h1-wakeup-at')
+		div(class='col-md-6')
+			p(class="text-right") Use keyboard arrow keys (&#8592; &#8594;) to change wake up time. 	
+	div(id='time-slider')
+	div(class='row')
+		div(class='col-md-6')
+			h4(id="h1-sleep-time") Try to <em><u>fall asleep</u></em> at one of the following times <br/> <small>The average adult takes <em><u>fifteen minutes</em></u> to fall asleep, so plan accordingly!</small>
+			div(id='bedTime')
+			h4 Waking up between the cycles lets you wake up feeling refreshed and alert!
+		div(class='col-md-6')
+			
+				
+
+
+block script
+	script.
+		$(function() {
+			var wakeUp = new wakeUpAt();
+			wakeUp.wakeUpSlider();
+							
+		});
+
+		

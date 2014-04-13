@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title= title
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css')
+		link(rel='stylesheet', href='/stylesheets/jquery.ui.labeledslider.css')
+	body
+		nav(class="navbar" role="navigation")
+			.container-fluid
+				.navbar-header
+					a(class="navbar-brand",ref="/")
+						img(src="images/logo.png", alt="bed time calculator",style="max-width:64px;")
+						|  Bedtime Calculator
+		.container
+			block content
+
+	script(src="/javascripts/jquery-2.1.0.min.js")
+	script(src="/bootstrap/js/bootstrap.min.js")
+	script(src="/jquery-ui/js/jquery-ui-1.10.4.custom.min.js")
+	script(src="/javascripts/jquery.ui.labeledslider.js")
+	script(src="/javascripts/common.js")
+	block script
+
